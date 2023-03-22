@@ -5,6 +5,14 @@ import java.text.SimpleDateFormat
 //
 apply plugin: 'com.android.library'
 
+task prepareKotlinBuildScriptModel {
+
+}
+
+task wrapper(type: Wrapper){
+    gradleVersion = '8.0.2'
+}
+
 android {
 
     defaultConfig {
